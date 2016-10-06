@@ -40,6 +40,7 @@ angular.module('starter', ['ionic'])
 .controller('bluetoothCtrl', ['$scope' ,'$rootScope', '$timeout', function($scope, $rootScope, $timeout){
   $scope.bluetooth = function() {
     var a = [];
+    $rootScope.hey = "";
     $rootScope.scanning = "scanning...";
       bluetoothSerial.discoverUnpaired(function(devices) {
         console.log("hey");
